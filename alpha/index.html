@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE CALCULATER</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="logo.png">
+    </head>
+<body>
+    <header>
+        <div class="h" >calculate your love percentege</div>
+        <div class="c">
+            <div class="center">
+                <div class="form1">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div><nav>+</nav></div>
+                <div class="form1">
+                    <input type="text" placeholder="LOve Name">
+                </div>
+            </div>
+            <div>
+                <button onclick="love()">Calculate</button>
+            </div>
+            <div><input type="text" id="lover"></div>
+        </div>
+        <div class="f">God Bless your Relationship</div>
+    </header>
+
+    <script>
+        function love(){
+            var lovedata = Math.random()*100;
+            lovedata = Math.floor(lovedata);
+            document.getElementById('lover').value = lovedata + "%";
+        };
+    </script>
+</body>
+</html>
